@@ -1,0 +1,53 @@
+.invalid-feedback[data-tooltip] {
+    //position: relative;
+  }
+  .invalid-feedback[data-tooltip]::before,
+  .invalid-feedback[data-tooltip]::after {
+    position: absolute;
+    display: none;
+    opacity: 0.85;
+  }
+  .invalid-feedback[data-tooltip]::before {
+    /*
+     * using data-tooltip instead of title so we 
+     * don't have the real tooltip overlapping
+     */
+    content: attr(data-tooltip);
+    background: #000;
+    color: #fff;
+    font-size: 13px;
+    padding: 5px;
+    border-radius: 5px;
+    /* we don't want the text to wrap */
+    //white-space: nowrap;
+    text-decoration: none;
+  }
+  .invalid-feedback[data-tooltip]::after {
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    content: '';
+  }
+  
+  .invalid-feedback[data-tooltip]:hover::before,
+  .invalid-feedback[data-tooltip]:hover::after {
+    display: block;
+  }
+
+  /*POSITION */
+
+  
+/* top tooltip */
+.invalid-feedback[data-tooltip][data-placement="left"]::before {
+    top: -25%;
+    right: 100%;
+    margin-right: 10px;
+}
+.invalid-feedback[data-tooltip][data-placement="left"]::after {
+    border-left-color: #000;
+    border-right: none;
+    top: 50%;
+    right: 100%;
+    margin-top: -6px;
+    margin-right: 4px;
+}

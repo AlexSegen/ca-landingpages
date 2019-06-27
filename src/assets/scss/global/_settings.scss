@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+$font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$font-header: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+$font-size: 15px;
+$font-color: #111;
+$background: #fff;
+
+$theme: #a71b2b;
+$theme-hover: lighten($theme, 5%);
+
+$theme02: #cb3524; 
+$theme02-hover: lighten($theme02,5%);
+
+$theme03: #664708;
+$theme03-hover: lighten($theme03,5%);
+
+$theme04:#E91E63;
+$theme04-hover: lighten($theme04,5%);
+
+$theme05: #FFC107;
+$theme05-hover: lighten($theme05,5%);
+
+$white: #eee;
+$white-hover: lighten($white,5%);
+
+$black: #111111;
+$black-hover: lighten($black,5%);
+
+$gray: #939598;
+$gray-hover: lighten($gray,5%);

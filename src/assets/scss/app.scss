@@ -1,0 +1,36 @@
+/*----------------------------------------------------------------------
+
+        MASTER STYLESHEET
+
+        Project:        Citröen Landing Page
+        Version:        Alpha 0.0.3
+        Author:         Alex Segen
+        Primary use:    Corporate, Business Themes.
+        Email:                  pixelagilweb@gmail.com
+        Follow:                 https://www.twitter.com/pixelagil
+        Github:                   https://www.github.com/alexsegen
+        Website:                https://www.pixelagil.com
+
+-----------------------------------------------------------------------*/
+@import 'global/settings',
+        'modules/buttons',
+        'modules/text-theme',
+        'modules/bg-theme',
+        'modules/posts',
+        'modules/spacing',
+        'modules/tooltips',
+        'modules/forms',
+        'modules/animations',
+        'global/typography',
+        'pages/citroen',
+        'global/base',
+        'layout/header',
+        'layout/footer',
+        'layout/sidebar',
+        'layout/gallery',
+        'layout/news',
+        'global/mixins',
+        'global/responsive';
+
+
+

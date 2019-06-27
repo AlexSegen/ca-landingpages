@@ -1,0 +1,257 @@
+/*--------------------------------------
+  [THEME BUTTONS]
+--------------------------------------*/
+
+.btn {
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &-theme {
+    background: $theme;
+    border: 1px solid $theme;
+    color: #eee !important;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      color: #666 !important;
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $theme-hover;
+      border: 1px solid $theme-hover;
+      color: #eee !important;
+    }
+
+  }
+
+  &-theme02 {
+    background: $theme02;
+    border: 1px solid $theme02;
+    color: #eee !important;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $theme02-hover;
+      border: 1px solid $theme02-hover;
+      color: #eee !important;
+    }
+
+
+  }
+
+  &-theme03 {
+    background: $theme03;
+    border: 1px solid $theme03;
+    color: #eee !important;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $theme03-hover;
+      border: 1px solid $theme03-hover;
+      color: #eee !important;
+    }
+
+  }
+
+  &-theme04 {
+    background: $theme04;
+    border: 1px solid $theme04;
+    color: #eee !important;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $theme04-hover;
+      border: 1px solid $theme04-hover;
+      color: #eee !important;
+    }
+
+  }
+
+  &-theme05 {
+    background: $theme05;
+    border: 1px solid $theme05;
+    color: #eee !important;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $theme05-hover;
+      border: 1px solid $theme05-hover;
+      color: #eee !important;
+    }
+
+  }
+
+  &-white {
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #eee;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $white-hover;
+      border: 1px solid $white-hover;
+      color: #666 !important;
+    }
+  }
+
+  &-gray {
+    background: #333;
+    border: 1px solid #333;
+    color: #eee !important;
+    &.square {
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      -webkit-border-radius:0px;
+      -moz-border-radius:0px;
+      border-radius:0px;
+    }
+    &.round {
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      -webkit-border-radius:25px;
+      -moz-border-radius:25px;
+      border-radius:25px;
+    }
+
+    &.border {
+      background: transparent;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $gray-hover;
+      border: 1px solid $gray-hover;
+      color: #eee !important;
+    }
+  }
+
+
+}
+
+
+
+/*--------------------------------------
+  [DEFAULT BUTTONS]
+--------------------------------------*/

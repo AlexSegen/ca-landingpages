@@ -1,0 +1,245 @@
+.citroen-landing {
+  font-family: 'Citroen';
+  padding-top: 50px;
+  background: #fff url("https://fotos.chileautos.cl/img/landing/citroen/citroen-background.jpg") no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  background-position-y: -150px;
+
+  .alert {
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 18px;
+    &.alert-success {
+      color: #ffffff;
+      background-color: #656155;
+      border-color: #333333;
+    }
+  }
+
+  @media (max-width: 1600px) {
+    background-position: bottom;
+    background-position-y: -20px;
+  }
+
+  @media (max-width: 1360px) {
+    background-position: top;
+    padding-top: 10px;
+  }
+
+  @media (max-width: 1300px) {
+    background-position: top;
+    background-position-y: 0;
+  }
+
+  @media (max-width: 992px) {
+    background-position: center;
+    background-position-y: 30px;
+  }
+
+  @media (max-width: 768px) {
+    background-position: center;
+    background-position-y: 100px;
+  }
+
+  @media (max-width: 767px) {
+    background-position: top;
+    background-position-y: 200px;
+  }
+
+  @media (max-width: 420px) {
+    padding-top: 100px;
+  }
+
+  @media(max-width:380px) {
+    padding-top: 50px;
+    background-position: left;
+    background-position-y: 200px;
+    background-size: 160%;
+  }
+
+  .vh100 {
+    min-height: 100vh;
+  }
+
+  .c5-section {
+    position: relative;
+    clear: both;
+    display: block;
+
+    &.section-padding {
+      padding: 50px 0;
+    }
+  }
+
+  .c5-logo-citroen-chile {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 80px;
+  }
+
+  .c5-header {
+    background: rgba(#000, 0.8);
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+    margin-left: -15px;
+    margin-right: 35px;
+    .c5-header-h1 {
+      font-weight: 600;
+      font-size: 28px;
+      margin: 0;
+    }
+
+    .c5-header-h2 {
+      font-size: 18px;
+      font-weight: 200;
+      margin: 0;
+    }
+
+    @media (max-width: 992px) {
+      .c5-header-h1 {
+        font-size: 20px;
+      }
+
+      .c5-header-h2 {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .c5-figure {
+    text-align: right;
+
+    @media (max-width: 992px) {
+      text-align: right;
+    }
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  .c5-suv-image {
+    max-width: 90%;
+    height: auto;
+    display: inline;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  .c5-tasa-interes {
+    text-align: right;
+    margin-bottom: -40px;
+    margin-top: 80px;
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+    }
+
+    /* @media(max-width: 992px) {
+            margin-top: 20px;
+        } */
+
+    @media (max-width: 768px) {
+      //margin-top: 20px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 420px) {
+        margin-top: 50px;
+      }
+  }
+
+  .c5-interes-image {
+    max-width: 100%;
+    height: auto;
+    display: inline;
+
+    @media (max-width: 1024px) {
+      max-width: 250px;
+    }
+
+    /* @media(max-width: 992px) {
+            max-width: 250px;
+        } */
+  }
+
+}
+
+.form-overlap {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+
+    &.open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, .5);
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.btn.btn-toggle {
+    color: #fff;
+    background: $theme;
+    border: 1px solid $theme;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 0;
+    z-index: 6;
+    font-size: 1.3em;
+
+    &.shown{ 
+        color: #333;
+        background: #eee;
+        border: 1px solid #eee;
+    }
+}
+
+.lp_btn-next-section {
+  color: $theme;
+  //background: $theme;
+  //border: 1px solid $theme;
+  background: transparent;
+  text-align: center;
+  border: unset;
+  width: 60px;
+  height: 60px;
+  display: block;
+  border-radius: 0;
+  margin: 0 auto;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: $theme;
+    text-decoration: none
+  }
+  .icon-down {
+    display: block;
+    font-size: 20px;
+    text-decoration: none
+  }
+}

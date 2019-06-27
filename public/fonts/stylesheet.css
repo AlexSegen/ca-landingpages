@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Citroen';
+    src: url('Citroen-Bold.woff2') format('woff2'),
+        url('Citroen-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Citroen';
+    src: url('Citroen-BoldItalic.woff2') format('woff2'),
+        url('Citroen-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Citroen';
+    src: url('Citroen-Italic.woff2') format('woff2'),
+        url('Citroen-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Citroen';
+    src: url('Citroen-LightItalic.woff2') format('woff2'),
+        url('Citroen-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Citroen';
+    src: url('Citroen.woff2') format('woff2'),
+        url('Citroen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Citroen';
+    src: url('Citroen-Light.woff2') format('woff2'),
+        url('Citroen-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
