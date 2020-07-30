@@ -15,8 +15,8 @@
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="c5-header">
-              <h1 class="c5-header-h1">NEW SUV CITRÖEN C5 AIRCROSS</h1>
-              <h2 class="c5-header-h2">UN SUV CON UNA PERSONALIDAD SINGULAR</h2>
+              <h1 class="c5-header-h1">VELOSTER N</h1>
+              <h2 class="c5-header-h2">Our performance enthusiast hatch.</h2>
             </div>
           </div>
         </div>
@@ -42,9 +42,9 @@
     <section class="c5-section ga-section vh100" id="gallery" v-if="section.gallery">
       <gallery/>
 
-      <go-next goto="news"/>
+      <go-next goto="news" v-if="section.news"/>
 
-      <div class="lp_contact-bar ">
+      <div class="lp_contact-bar " v-if="section.news">
         <div class="container">
           <div class="row">
             <div class="col-md-8">
@@ -99,7 +99,7 @@ export default {
     return {
       section: {
         gallery: true,
-        news: true
+        news: false
       },
       toggle: false,
       lead: {
