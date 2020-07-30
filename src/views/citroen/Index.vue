@@ -99,7 +99,7 @@ export default {
           email: "",
           region: 0,
           ciudad: 0,
-          modelo: "SUV CITRÖEN C5 AIRCROSS",
+          modelo: "Hyundai Veloster 2020",
           comentarios: "",
           Marca: "",
           nombreCiudad: "",
