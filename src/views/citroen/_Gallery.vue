@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container mt-5">
     <div class="row row-gal">
       <div class="col-sm-6 wow animation slide-in-left">
         <div class="ga-header">

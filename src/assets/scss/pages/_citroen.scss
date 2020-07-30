@@ -1,10 +1,6 @@
 .citroen-landing {
   font-family: 'Citroen';
-  padding-top: 50px;
-  background: #fff url("https://fotos.chileautos.cl/img/landing/citroen/citroen-background.jpg") no-repeat;
-  background-size: 100%;
-  background-position: bottom;
-  background-position-y: -150px;
+
 
   .alert {
     font-size: 18px;
@@ -70,6 +66,12 @@
     &.section-padding {
       padding: 50px 0;
     }
+
+    &.bg {
+      background: #12041d url(https://www.hyundai.cl/page/assets/img/modelos/all-new-veloster/cabecera-modelos.jpg) no-repeat;
+      background-size: 100%;
+      background-position: center;
+    }
   }
 
   .c5-logo-citroen-chile {
@@ -81,7 +83,7 @@
   }
 
   .c5-header {
-    background: rgba(#000, 0.8);
+    background: var(--red);
     color: #fff;
     text-align: right;
     padding: 10px;

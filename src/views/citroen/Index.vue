@@ -1,20 +1,10 @@
 <template>
   <div class="citroen-landing " id="top">
-    <section class="c5-section vh100">
+    <section class="c5-section bg vh100">
       <div class="container-fluid ">
-        <div class="row">
-          <div class="col-md-6 col-sm-7">
-            <img
-              src="@/assets/img/citroen/citroen-chile.png"
-              class="c5-logo-citroen-chile"
-              alt="Citröen Chile"
-            >
-          </div>
-        </div>
-
-        <div class="row">
+        <div class="row mb-5">
           <div class="col-md-6 col-sm-6 col-xs-12">
-            <div class="c5-header">
+            <div class="c5-header" style="margin-top:40px">
               <h1 class="c5-header-h1">VELOSTER N</h1>
               <h2 class="c5-header-h2">Our performance enthusiast hatch.</h2>
             </div>
@@ -22,16 +12,11 @@
         </div>
 
         <div class="row">
-          <div class="col-md-8 col-sm-">
-            <figure class="c5-tasa-interes">
-              <img src="@/assets/img/citroen/tasa-interes.png" class="c5-interes-image" alt>
-            </figure>
-            <figure class="c5-figure mt-20 mb-10">
-              <img src="@/assets/img/citroen/suv-citroen-c5.png" class="c5-suv-image" alt>
-            </figure>
-          </div>
-          <div class="col-md-4 d-none d-md-block">
+          <div class="col-md-2"></div>
+          <div class="col-md-4 d-none d-md-block col-md-4 d-none d-md-block pt-5">
             <Form :lead="lead"/>
+          </div>
+          <div class="col-md-6">
           </div>
         </div>
       </div>
