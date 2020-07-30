@@ -1,6 +1,6 @@
 <template>
 <div class="form-container-v2 theme02 animation fade-in">
-      <div class="form-header">Ingresa tus datos</div>
+      <div class="form-header">Get your new car today</div>
     <div v-if="success" class="alert alert-success text-center mt-3"><strong>¡Gracias por contactarnos!</strong> nos comunicaremos contigo muy pronto.</div>
     <form v-show="!success" @submit.prevent="handleSubmit()">
         
@@ -9,7 +9,7 @@
             <div class="runIn">
               <img src="@/assets/img/wheel_b-w.png" alt="Loading" class="loader-wheel">
             </div>
-            Enviando datos...
+            Sending...
           </span>
         </div>
         
@@ -17,7 +17,7 @@
           <div class="row">
             <div class="col --col">
               <div class="form-group" :class="{ 'has-error': submitted && errors.has('Nombre') }">
-                <input type="text" placeholder="Nombre" class="form-control form-control-sm"
+                <input type="text" placeholder="First ame" class="form-control form-control-sm"
                 id="nombre"
                 name="Nombre"
                 v-model="lead.metadata.Nombre"
@@ -32,7 +32,7 @@
             </div>
             <div class="col --col">
               <div class="form-group" :class="{ 'has-error': submitted && errors.has('apellido') }">
-                <input type="text" placeholder="Apellido" class="form-control form-control-sm"
+                <input type="text" placeholder="Last name" class="form-control form-control-sm"
                 id="apellido"
                 name="apellido"
                 v-model="lead.metadata.apellido"
@@ -46,7 +46,7 @@
           </div>
 
           <div class="form-group" :class="{ 'has-error': submitted && errors.has('rut') }">
-            <input type="text" placeholder="RUT" class="form-control form-control-sm"
+            <input type="text" placeholder="DNI" class="form-control form-control-sm"
             id="rut"
             name="rut"
             v-model="lead.metadata.rut"
@@ -70,7 +70,7 @@
             ></div>
           </div>
           <div class="form-group" :class="{ 'has-error': submitted && errors.has('fonoCel') }">
-            <input type="text" placeholder="Teléfono" class="form-control form-control-sm"
+            <input type="text" placeholder="Phone" class="form-control form-control-sm"
               id="telefono"
               name="fonoCel"
               v-model="lead.metadata.fonoCel"
@@ -92,7 +92,7 @@
                     v-validate="{ required: true, is_not: 0 }"
                     @change="loadCities()"
                     >
-                  <option value="0">Región</option>
+                  <option value="0">State</option>
                   <option value="99">Región de prueba</option>
                     <template v-for="(region, regionIndex) in regions">
                         <option
@@ -115,7 +115,7 @@
                 @change="getCityName()"
                 v-model="lead.metadata.ciudad"
                 v-validate="{ required: true, is_not: 0 }">
-                  <option value="0">Ciudad</option>
+                  <option value="0">City</option>
                   <option value="99" data-ciudad="Ciudad de Prueba">Ciudad de Prueba</option>
                     <template v-for="(city, cityIndex) in cities">
                     <option
@@ -134,7 +134,7 @@
           </div>
 
           <div class="form-group" :class="{ 'has-error': submitted && errors.has('comentarios') }">
-            <textarea placeholder="Comentarios" cols="30" rows="2" class="form-control"
+            <textarea placeholder="Comments" cols="30" rows="2" class="form-control"
               id="Comentarios"
               name="comentarios"
               v-model="lead.metadata.comentarios"
@@ -149,15 +149,13 @@
           <input type="hidden" name="" v-model="origen">
           <input type="hidden" name="" v-model="lead.metadata.modelo">
 
-          <div class="form-group mb-0">
+          <div class="form-group">
             <div v-if="error" class="alert alert-warning text-center mt-3"><strong>¡Lo sentimos!</strong> Algo falló al enviar tus datos. Por favor, <u>reintenta</u>.</div>
-            <button type="submit" class="btn btn-theme btn-block">Solicitar Cotización</button>
+            <button type="submit" class="btn btn-theme btn-block">Send message</button>
           </div>
         </div>
       </form>
-      <div
-        class="form-footer"
-      >El uso de este sitio web implica la aceptación de los Términos y Condiciones y de las Políticas de Privacidad de Chileautos.cl Copyright © {{year}} Chileautos Chile SpA.</div>
+      
     </div>
 </template>
 
